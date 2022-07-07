@@ -120,3 +120,70 @@ ul.open {
   display: table;
   clear: both;
 }
+
+.row-gallery {
+  width: 100vw;
+}
+
+.row-gallery img {
+  /*max-width: 100%;*/
+  height: auto;
+}
+
+.row-gallery-col1 {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.row-gallery-col2 {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.row-gallery-col3 {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.row-gallery-col1 img,
+.row-gallery-col3 img {
+  /*width: 90%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 20% 0;*/
+}
+
+.row-gallery-col2 img {
+  /*width: 90%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 20% 0;*/
+  padding-bottom: 14%;
+}
+
+img#typeA {
+  width: 95%;
+  height: 300%;
+  object-fit: cover;
+  object-position: 20% 0;
+}
+
+img#typeB {
+  width: 95%;
+  height: 125%;
+  object-fit: cover;
+  object-position: 20% 0;
+}
+
+img#typeC {
+  padding: 30px;
+}
