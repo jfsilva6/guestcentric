@@ -187,3 +187,15 @@ img#typeB {
 img#typeC {
   padding: 30px;
 }
+
+.seila {
+  position: relative;
+}
+
+.evidencia {
+  background-color: #ffffff;
+  opacity: 0.8;
+  width: 30%;
+  bottom: 10%;
+  position: absolute;
+}
