@@ -207,18 +207,53 @@ img#typeC {
 }
 
 .parallax {
-  /* The image used */
-  background-image: url("https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2019/10/folhas-conheca-os-principais-tipos-quais-sao-as-partes-e-caracteristicas-7.jpg");
-
-  /* Full height */
+  /*background-image: url("https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2019/10/folhas-conheca-os-principais-tipos-quais-sao-as-partes-e-caracteristicas-7.jpg");
   height: 200px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  perspective: 3px;
+  background-size: cover;*/
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  background: white;
+  margin: 0;
+}
+
+.parallax:nth-of-type(2n) {
+  background: black;
+}
+
+.parallax:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.parallax:nth-of-type(2n):after {
+  background: red;
+  mix-blend-mode: multiply;
+}
+
+.parallax:nth-of-type(2n + 1):after {
+  background: green;
+  mix-blend-mode: screen;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  mix-blend-mode: difference;
+  color: white;
+
+  /*position: absolute;
+  z-index: 999;*/
 }
 
 section {
