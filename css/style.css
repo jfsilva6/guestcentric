@@ -365,3 +365,25 @@ img[data-active="true"] {
   margin-bottom: 25%;
   width: 100%;
 }
+
+footer {
+  color: white;
+  background-color: black;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
