@@ -141,29 +141,39 @@ ul.toggle-menu {
 }
 
 .sub-slider {
-  padding-top: 25%;
+  padding-top: 15%;
 }
 
-@media only screen and (max-width: 768px) {
-  .language {
-    padding-left: 10%;
-  }
+.sub-slider #slider-welcome {
+  font-size: 24px;
+  color: grey;
+  text-transform: uppercase;
+}
 
-  .tog-menu {
-    max-width: 150px;
-  }
+.sub-slider #slider-welcome:after {
+  content: "\a";
+  white-space: pre;
+}
 
-  #toggle {
-    padding-left: 0%;
-  }
+.sub-slider #slider-second-welcome {
+  padding-top: 10%;
+  font-size: 40px;
+  color: grey;
+  text-transform: uppercase;
+}
 
-  .top-menu {
-    display: none;
-  }
+.sub-slider #slider-second-welcome:after {
+  content: "\a";
+  white-space: pre;
+}
 
-  .booking img {
-    max-width: 70%;
-  }
+.slider-footer {
+  padding-top: 5%;
+  color: white;
+}
+
+.slider-footer > span:first-of-type {
+  text-transform: uppercase;
 }
 
 li a {
@@ -208,16 +218,32 @@ ul.open {
   width: 100vw;
 }
 
+.second-container h2 {
+  font-size: 40px;
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+.second-container p {
+  width: 50%;
+  padding-top: 2%;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 30%;
+  padding-right: 10%;
+}
+
 .col1 {
   float: left;
   width: 45%;
   padding: 10px;
-  height: 300px;
+  height: 200px;
   box-sizing: border-box;
-  background-color: blue;
 }
 
 .col1 img {
+  padding-left: 20%;
   max-width: 80%;
   height: auto;
 }
@@ -228,14 +254,61 @@ ul.open {
   padding: 10px;
   height: 300px;
   box-sizing: border-box;
-  background-color: red;
 }
 
+.col2 #title {
+  font-size: 20px;
+}
+
+.col2 #sub-title {
+  margin-left: -30px;
+  font-size: 26px;
+}
+
+.col2 p:first-of-type {
+  padding-top: 10%;
+}
+
+.clo2 {
+  font-size: 14px;
+}
+
+.col2 img {
+  padding-top: 5%;
+  margin-left: -25%;
+}
+
+.second-container #inside-deden,
+#next-deden,
+#praias {
+  padding-left: 30%;
+  width: 50%;
+}
+
+.row {
+  padding-top: 5%;
+}
 /*Isto não sei para que serve, mas pode-se apagar depois?!?!?!?*/
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.row-gallery #title,
+.all-include #title,
+.praias #title {
+  font-size: 26px;
+  color: red;
+}
+
+.row-gallery #title {
+  margin-left: -20%;
+}
+
+.row-gallery p {
+  text-align: left;
+  margin-left: -20%;
 }
 
 .row-gallery {
@@ -262,6 +335,7 @@ ul.open {
   padding: 10px;
   height: 300px;
   box-sizing: border-box;
+  padding-bottom: 2%;
 }
 
 .row-gallery-col3 {
@@ -274,10 +348,7 @@ ul.open {
 
 .row-gallery-col1 img,
 .row-gallery-col3 img {
-  /*width: 90%;
-  height: 400px;
-  object-fit: cover;
-  object-position: 20% 0;*/
+  padding-bottom: 2rem;
 }
 
 .row-gallery-col2 img {
@@ -285,7 +356,7 @@ ul.open {
   height: 400px;
   object-fit: cover;
   object-position: 20% 0;*/
-  padding-bottom: 14%;
+  padding-bottom: 10%;
 }
 
 img#typeA {
@@ -303,24 +374,38 @@ img#typeB {
 }
 
 img#typeC {
-  padding: 30px;
+  margin-left: -50%;
 }
 
-.seila {
+img#typeC\ #galeria {
+  padding-top: 5px;
+  margin-left: -20%;
+}
+
+img#typeC\ praias {
+  margin-left: -30%;
+}
+
+.all-include {
   position: relative;
   padding-top: 85%;
 }
 
-.seila img {
+.all-include img {
   max-width: 100%;
 }
 
 .evidencia {
   background-color: #ffffff;
   opacity: 0.8;
-  width: 30%;
+  width: 40%;
   bottom: 10%;
   position: absolute;
+}
+
+.evidencia img {
+  padding-bottom: 15px;
+  margin-left: -20%;
 }
 
 .parallax {
@@ -373,9 +458,6 @@ img#typeC {
   z-index: 999;*/
 }
 
-section {
-  padding-bottom: 15%;
-}
 /*
 .carrousel {
   width: 100vw;
@@ -490,6 +572,8 @@ footer {
 
 footer li {
   list-style: none;
+  padding-right: 20px;
+  text-transform: uppercase;
 }
 
 .footer-menu {
@@ -502,5 +586,61 @@ footer li {
   text-align: center;
   font-size: 13px;
   color: #aaa;
+  padding-bottom: 10px;
   margin-bottom: 0;
+}
+
+.praias {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+footer {
+  padding-top: 2rem;
+  font-size: 24px;
+}
+
+footer #footer-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer span {
+  text-transform: uppercase;
+}
+
+footer #hotel:after {
+  content: "\a";
+  white-space: pre;
+}
+
+footer p,
+footer .footer-menu,
+footer .copyright {
+  font-size: 12px;
+}
+/************************************
+              MOBILE
+*************************************/
+
+@media only screen and (max-width: 768px) {
+  .language {
+    padding-left: 10%;
+  }
+
+  .tog-menu {
+    max-width: 150px;
+  }
+
+  #toggle {
+    padding-left: 0%;
+  }
+
+  .top-menu {
+    display: none;
+  }
+
+  .booking img {
+    max-width: 70%;
+  }
 }
