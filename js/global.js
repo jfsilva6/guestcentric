@@ -1,6 +1,6 @@
 $(document).ready(function () {
   console.log("Estou aqui");
-  $("i").click(function () {
+  $("#toggle").click(function () {
     $("ul").toggleClass("open");
   });
 
