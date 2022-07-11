@@ -11,7 +11,7 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/global.js"></script>
+    <script src="js/global.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Deden Resort</title>
   </head>
@@ -26,7 +26,7 @@
           -->
           <div class="tog-menu">
             <i class="fa fa-bars" title="Open Menu"></i>
-            <ul>
+            <ul class="toggle-menu">
               <li><a href="#">vilas e apartamentos</a></li>
               <li><a href="#">ofertas especiais</a></li>
               <li><a href="#">tudo incluido</a></li>
@@ -157,6 +157,7 @@
 
       <section>
         <div class="seila">
+          <div class="parallax"></div>
           <img src="/img/IMG_9414.JPG" alt="Variedade nas refeições" />
 
           <div class="evidencia">
@@ -170,8 +171,9 @@
           </div>
         </div>
 
-        <h1 id="header">próximo ao deden</h1>
-        <div class="parallax"></div>
+        <!-- <h1 id="header">próximo ao deden</h1>-->
+
+        <h1>próximo ao deden</h1>
         <div class="parallax"></div>
 
         <h2>
@@ -180,6 +182,36 @@
           uma experiência mais profunda do Algarve.
         </h2>
       </section>
+
+      <section aria-label="Image Carousel">
+        <div class="carousel-container">
+          <button id="prevBtn">&#8656;</button>
+          <button id="nextBtn">&#8658;</button>
+
+          <div class="carousel-slide">
+            <img src="img/V4.jpg" id="lastFoto" alt="" />
+            <img src="img/IMG_7969.JPG" alt="" data-active="true" />
+            <img src="img/Foto_7.jpg" alt="" />
+            <img src="img/IMG_8127.JPG" alt="" />
+            <img src="img/V3.jpg" alt="" />
+            <img src="img/V4.jpg" alt="" />
+            <img src="img/IMG_7969.JPG" id="firstFoto" alt="" />
+          </div>
+        </div>
+
+        <div>
+          <span>praias</span>
+          <p>
+            O Algarve é conhecido pelas suas praias de água límpida e areias
+            douradas, algumas rodeadas por falésias e escarpas, outras
+            caracterizadas pelas suas grutas. Se planeia passar férias no Deden
+            Resort damos-lhe algumas dicas de praias que não pode deixar de
+            conhecer.
+          </p>
+          <img src="/img/book 4.png" alt="Ver notícia completa" id="typeC" />
+        </div>
+      </section>
     </div>
+    <footer></footer>
   </body>
 </html>

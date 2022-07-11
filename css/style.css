@@ -1,7 +1,7 @@
 body {
   font-size: 12px;
   font-family: sans-serif;
-  margin-top: 0px;
+  margin: 0;
   text-align: center;
 }
 nav {
@@ -38,7 +38,7 @@ nav {
   max-width: 200px;
   /*background-color: red;*/
 }
-ul {
+ul.toggle-menu {
   list-style: none;
   padding: 0;
   background: #93c7d6;
@@ -207,34 +207,34 @@ img#typeC {
 }
 
 .parallax {
-  /*background-image: url("https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2019/10/folhas-conheca-os-principais-tipos-quais-sao-as-partes-e-caracteristicas-7.jpg");
+  background-image: url("https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2019/10/folhas-conheca-os-principais-tipos-quais-sao-as-partes-e-caracteristicas-7.jpg");
   height: 200px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;*/
-  position: relative;
+  background-size: cover;
+  /*position: relative;
   width: 100vw;
   height: 50vh;
   background: white;
-  margin: 0;
+  margin: 0;*/
 }
 
 .parallax:nth-of-type(2n) {
-  background: black;
+  /* background: black;*/
 }
 
 .parallax:after {
-  content: "";
+  /*content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 2;*/
 }
 
-.parallax:nth-of-type(2n):after {
+/*.parallax:nth-of-type(2n):after {
   background: red;
   mix-blend-mode: multiply;
 }
@@ -242,7 +242,7 @@ img#typeC {
 .parallax:nth-of-type(2n + 1):after {
   background: green;
   mix-blend-mode: screen;
-}
+}*/
 
 #header {
   position: fixed;
@@ -258,4 +258,110 @@ img#typeC {
 
 section {
   padding-bottom: 15%;
+}
+/*
+.carrousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carrousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide > img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+.carrousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carrousel-button:hover,
+.carrousel-button:focus {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carrousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carrousel-button.prev {
+  left: 1rem;
+}
+
+.carrousel-button.next {
+  right: 1rem;
+}
+*/
+.carousel-container {
+  width: 80%;
+  margin: 0% 5%;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 60%;
+  margin: 0 10%;
+  max-height: 500px;
+}
+
+.carousel-slide img {
+  margin: 0rem 2rem;
+  width: 60%;
+  height: 400px;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 90%;
+  z-index: 5;
+  left: 45%;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 90%;
+  z-index: 5;
+  right: 45%;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+img[data-active="true"] {
+  margin-top: -25%;
+  margin-bottom: 25%;
+  width: 100%;
 }
